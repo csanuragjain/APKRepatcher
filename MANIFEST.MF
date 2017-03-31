@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: . APKRepatcher_lib/zip4j/zip4j-1.3.2.jar APKRepatcher_lib/rsyntaxtextarea/rsyntaxtextarea-2.6.1.jar APKRepatcher_lib/commonio/commons-io-2.5.jar
+Main-Class: com.cooltrickshome.APKRepatcher
+
