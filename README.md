@@ -16,6 +16,7 @@ Build features re-creates new apk with all code changes and lastly it would resi
 Basic features like find/replace/increase or decrease font are also provided.
 It also allows you to convert from Dex to Jar/Class/Smali/Java, Jar to Dex/Java, Class to Dex/Smali, Smali to Class/Java/Dex. Also allows to extract and sign any apk.
 Patch Module using Advanced Section (explained on website)
+APKRepatcher is created using Java with no os dependency (as far as i think) so you can run it with various OS
 Allows you to change the amount of memory utilized by APKRepatcher.
 100% Free
 
