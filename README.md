@@ -15,6 +15,7 @@ Smali changes once saved would be reflected back in updated apk after building p
 Build features re-creates new apk with all code changes and lastly it would resign the apk.
 Basic features like find/replace/increase or decrease font are also provided.
 It also allows you to convert from Dex to Jar/Class/Smali/Java, Jar to Dex/Java, Class to Dex/Smali, Smali to Class/Java/Dex. Also allows to extract and sign any apk.
+Patch Module using Advanced Section (explained on website)
 Allows you to change the amount of memory utilized by APKRepatcher.
 100% Free
 
