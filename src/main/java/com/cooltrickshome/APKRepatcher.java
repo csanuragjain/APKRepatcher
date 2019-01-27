@@ -84,7 +84,7 @@ public class APKRepatcher implements Runnable {
 	JLabel memLabel;
 	String filePath = null;
 	JFrame frame = null;
-	String currVersion = "1.0.0";
+	String currVersion = "1.1.0";
 	String title = "APKRepatcher by csanuragjain (https://cooltrickshome.blogspot.com)";
 	String howToUseURL = "https://cooltrickshome.blogspot.com/2017/03/apkrepatcher-now-decompile-recompile.html";
 	String gitURL = "https://github.com/csanuragjain/APKRepatcher/releases";
