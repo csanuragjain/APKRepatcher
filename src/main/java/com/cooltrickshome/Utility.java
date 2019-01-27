@@ -135,7 +135,7 @@ public class Utility {
 		// String[] commands =
 		// {"cmd","/c","start","/B","java","-jar",getAPKToolLibraryPath(),"d",apkPath,"-fo",outputDirectory};
 		String[] commands = { "java",heapArg+memoryAllocated+memUnit, "-jar", getAPKToolLibraryPath(), "d",
-				apkPath, "-fo", outputDirectory };
+				apkPath, "-f","-o", outputDirectory };
 		runProgram(commands, getProjectPath());
 	}
 
