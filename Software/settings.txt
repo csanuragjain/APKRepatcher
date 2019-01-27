@@ -1,2 +1,0 @@
-memoryAllocated=1500
-memoryAllocatedUnit=m
