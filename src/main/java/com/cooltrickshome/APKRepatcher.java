@@ -247,7 +247,7 @@ public class APKRepatcher implements Runnable {
 											+ howToUseURL
 											+ ".Please open it manually. "
 											+ e.getMessage());
-							Font font = new Font(Font.SANS_SERIF, Font.PLAIN,
+							Font font = new Font(Font.MONOSPACED, Font.PLAIN,
 									16);
 							JFrame f = new JFrame("URL to open");
 							JEditorPane ed = new JEditorPane();
