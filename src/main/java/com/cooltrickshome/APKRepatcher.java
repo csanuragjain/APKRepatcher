@@ -89,6 +89,7 @@ public class APKRepatcher implements Runnable {
 	String howToUseURL = "https://cooltrickshome.blogspot.com/2017/03/apkrepatcher-now-decompile-recompile.html";
 	String gitURL = "https://github.com/csanuragjain/APKRepatcher/releases";
 	String checkVersion = "https://raw.githubusercontent.com/csanuragjain/APKRepatcher/master/VERSION";
+	static Font globalFont = new Font(Font.MONOSPACED, Font.PLAIN,16);
 	
 	@Override
 	public void run() {
@@ -1051,6 +1052,7 @@ public class APKRepatcher implements Runnable {
 									.getComponentAt(chosenIndex);
 							RSyntaxTextArea htmlPane = (RSyntaxTextArea) htmlScroll
 									.getViewport().getView();
+							htmlPane.setFont(globalFont);
 							String filePathLocal = tabPane
 									.getToolTipTextAt(chosenIndex);
 							filePathLocal = filePathLocal
@@ -1292,6 +1294,7 @@ public class APKRepatcher implements Runnable {
 									.getComponentAt(chosenIndex);
 							RSyntaxTextArea htmlPane = (RSyntaxTextArea) htmlScroll
 									.getViewport().getView();
+							htmlPane.setFont(globalFont);
 							String filePathLocal = tabPane
 									.getToolTipTextAt(chosenIndex);
 							String folderName = filePathLocal.substring(0,
@@ -1363,6 +1366,7 @@ public class APKRepatcher implements Runnable {
 											.getComponentAt(i);
 									RSyntaxTextArea htmlPane2 = (RSyntaxTextArea) htmlScroll2
 											.getViewport().getView();
+									htmlPane2.setFont(globalFont);
 									htmlPane2.setText(FileUtils
 											.readFileToString(
 													new File(javaFile), "UTF-8"));
@@ -1404,7 +1408,7 @@ public class APKRepatcher implements Runnable {
 							.getViewport().getView();
 					Font font = new Font(Font.SANS_SERIF, Font.PLAIN, htmlPane
 							.getFont().getSize() + 1);
-					htmlPane.setFont(font);
+					htmlPane.setFont(globalFont);
 				} catch (Exception e) {
 
 				}
@@ -1421,7 +1425,7 @@ public class APKRepatcher implements Runnable {
 							.getViewport().getView();
 					Font font = new Font(Font.SANS_SERIF, Font.PLAIN, htmlPane
 							.getFont().getSize() - 1);
-					htmlPane.setFont(font);
+					htmlPane.setFont(globalFont);
 				} catch (Exception e) {
 
 				}
@@ -1459,6 +1463,7 @@ public class APKRepatcher implements Runnable {
 									.getComponentAt(chosenIndex);
 							RSyntaxTextArea htmlPane = (RSyntaxTextArea) htmlScroll
 									.getViewport().getView();
+							htmlPane.setFont(globalFont);
 							String filePathLocal = tabPane
 									.getToolTipTextAt(chosenIndex);
 							filePathLocal = filePathLocal
@@ -2037,7 +2042,7 @@ public class APKRepatcher implements Runnable {
 		textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
 		textArea.setCodeFoldingEnabled(true);
 		Font font = new Font(Font.SANS_SERIF, Font.PLAIN, 16);
-		textArea.setFont(font);
+		textArea.setFont(globalFont);
 		return textArea;
 	}
 
@@ -2059,6 +2064,7 @@ public class APKRepatcher implements Runnable {
 					if (!openedTabs.containsKey(filePath)) {
 						if (tabPane.getTabCount() < 200) {
 							RSyntaxTextArea htmlPane = getHtmlPane();
+							htmlPane.setFont(globalFont);
 							RTextScrollPane htmlView = new RTextScrollPane(
 									htmlPane);
 							File file = new File(Utility.getJavaCodeFolder()
