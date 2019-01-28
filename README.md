@@ -2,6 +2,8 @@
 
 APKRepatcher helps you to modify an existing apk using a simple user friendly GUI. It lets you edit java/smali code from an APK and rewrite the changes back to the modified signed APK. Additionally, it provides you option to convert Dex, Jar, Class, Smali, Class from one format to another.
 
+If you like this project, feel free to paypal me at cs.anurag.jain@gmail.com :)
+
 # Website (Full Doc/Tutorial/Screenshot):
 https://cooltrickshome.blogspot.in/2017/03/apkrepatcher-now-decompile-recompile.html
 
